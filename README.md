@@ -2,7 +2,7 @@
 ## Large
 ### small
 #### smaller
-[Link](https://google.com)
+[Link to Google](https://google.com)<br />
 **Bold**
 
 This is an eCommerce website demonstrates the following technologies:
