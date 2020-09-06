@@ -1,0 +1,16 @@
+.languageBar{
+  background-color: #253238;
+
+  .inner-languageBar{
+    display: flex;
+    justify-content: space-between;
+    color: #ffffff;
+
+    button{
+      background-color: transparent;
+      border: none;
+      
+      color: #ffffff;
+    }
+  }
+}
