@@ -1,16 +1,266 @@
+.App{
+  height: 4000px;
+  color: #253238;
+}
 .languageBar{
   background-color: #253238;
 
   .inner-languageBar{
+    color: #ffffff;
+    height: 40px;
     display: flex;
     justify-content: space-between;
-    color: #ffffff;
+    align-items: center;
+
+    .logIn{
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    .buttons{
+      height: 100%;
+      border-left: 1px solid #C21B35;
+      display: flex;
+      align-items: center;
+
+      button{
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+  
+        &.lang{
+          width: 40px;
+  
+          &:first-of-type{
+            border-right: 1px solid #C21B35;
+          }
+        }
+        &.active{
+          color: #C21B35;
+        }
+        &.signIn{
+          background-color: #C21B35;
+          width: 60px;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+.nav{
+  .inner-nav{
+    display: flex;
+    align-items: center;
+
+    .logo{
+      width: 100px;
+      height: 70px;
+      margin-top: 4px;
+      margin-bottom: 1px;
+      margin-right: 20px;
+
+    }
+    ul{
+      list-style: none;
+      display: flex;
+      width: 40%;
+
+      li{
+        padding: 20px 20px;
+        font-weight: bold;
+      }
+    }
+    .search{
+      width: 30%;
+    }
+    .call-us{
+      display: flex;
+      
+      img{
+        width: 43px;
+        height: 43px;
+        margin-right: 10px;
+      }
+
+    }
+  }
+}
+.cover{
+  background-image: url("./images/cover.png");
+  background-size: cover;
+  .inner-cover{
+    width: 100%;
+    height: 75vh;
+    padding-left: 2%;
+
+    .natural{
+      position: relative;
+      top: 30%;
+      
+      color: #4a5255;
+      font-size: 16px;
+      font-style: italic;
+      font-weight: 100;
+    }
+    .carrier-box{
+      position: relative;
+      top: 40%;
+
+      h2{
+        color: #b8b9b4;
+        font-size: 45px;
+        line-height: .98;
+      }
+      .fresh{
+        position: relative;
+        top: -19px;
+
+        color: #6d6c67;
+      }
+    }
+
+  }
+}
+.categories{
+  .inner-categories{
+    //background-color: red;
+    padding: 40px 0;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(8,11.5%);
+    gap: 7px 1%;
 
     button{
       background-color: transparent;
       border: none;
-      
-      color: #ffffff;
+      //color: #ffffff;
+      &:focus-within{
+        border: none;
+      }
+      .title{
+        text-transform: capitalize;
+        font-size: 18px;
+        
+        &.active{
+          color: #C21B35;
+        }
+      }
+    }
+  }
+}
+.Ads{
+  .inner-Ads{
+    display: flex;
+    .hot-deals{
+      display: flex;
+      flex-wrap: wrap;
+      width: 32%;
+      margin-right: 20px;
+
+      .titles-box{
+        h2{
+          color: #253238;
+          font-size: 25px;
+          margin-bottom: 10px;
+        }
+        h3{
+          color: #b8b9b4;
+          font-size: 15px;
+          font-weight: normal;
+        }
+      }
+      .paging{
+        margin-left: auto;
+      }
+      .card{
+        width: 100%;
+        margin-top: 30px;
+        border: 2px solid #efefef;
+        border-radius: 5px;
+        
+        img{
+          width: 100%;
+        }
+        .product-info{
+          background-color: #efefef;
+          //padding-top: 15px;
+          //padding-bottom: 40px;
+          padding: 20px 15px 40px;
+          text-align: center;
+          
+          .product-name{
+            color: #a5a5a2;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: normal;
+            text-transform: uppercase;
+          }
+          .product-description{
+            margin-bottom: 10px;
+            font-size: 19px;
+          }
+          .product-rate{
+            margin-bottom: 10px;
+          }
+          .product-price{
+            margin-bottom: 10px;
+
+            .old-price{
+              color: #a5a5a2;
+              font-size: 18px;
+              text-decoration: line-through;
+            }
+            .new-price{
+              color: #C21B35;
+              font-size: 18px;
+            }
+            .badge{
+              background-color: #C21B35;
+              color: #FFFFFF;
+              padding: 2px 4px;
+              font-size: 13px;
+              font-weight: bold;
+            }
+          }
+          .availability{
+            color: #a5a5a2;
+            margin-bottom: 10px;
+
+            .amount{
+              color: #C21B35;
+              font-weight: bold;
+            }
+          }
+          .Offers-ends-in{
+            display: flex;
+            width: 95%;
+            margin: auto;
+            p{
+              color: #a5a5a2;
+              width: 44%;
+            }
+            .down-timer{
+              h2,h3{
+                font-weight: normal;
+                span{
+                  display: inline-block;
+                  width: 46px;
+                }
+              }
+              h2{
+                font-size: 19px;
+                span{
+                  padding: 0 6px;
+                }
+              }
+              h3{
+                color: #a5a5a2;
+                font-size: 13px;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
