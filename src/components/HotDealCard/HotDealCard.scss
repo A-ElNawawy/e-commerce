@@ -1,0 +1,39 @@
+.HotDealCard{
+  .Card{
+    width: 400px;
+    border: 2px solid #efefef;
+    img{
+      display: block;
+      margin: auto;
+      width: 364px;
+      height: 364px;
+    }
+    .product-info{
+      padding: 20px 15px 15px;
+      background-color: #efefef;
+      text-align: center;
+      
+      .product-name{
+        font-size: 17px;
+      }
+      .product-description{
+        width: 100%;
+        font-size: 20px;
+        white-space: normal;
+        overflow: visible;  
+      }
+      .product-price{
+  
+        .old-price{
+          font-size: 18px;
+        }
+        .new-price{
+          font-size: 18px;
+        }
+        .badge{
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

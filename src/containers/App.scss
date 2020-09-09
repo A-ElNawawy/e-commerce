@@ -1,5 +1,5 @@
 .App{
-  height: 4000px;
+  
   color: #253238;
 }
 .languageBar{
@@ -85,7 +85,7 @@
   }
 }
 .cover{
-  background-image: url("./images/cover.png");
+  background-image: url("./../Data/images/cover.png");
   background-size: cover;
   .inner-cover{
     width: 100%;
@@ -149,118 +149,99 @@
 }
 .Ads{
   .inner-Ads{
-    display: flex;
+    display: grid;
+    grid-template-columns: 400px auto;
+    gap: 20px;
+
     .hot-deals{
-      display: flex;
-      flex-wrap: wrap;
-      width: 32%;
-      margin-right: 20px;
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 90px auto;
+    }
+    .new-arrivals{
+      display: grid;
+      grid-template-columns: 80% 20%;
+      grid-template-rows: 90px auto;
 
-      .titles-box{
-        h2{
-          color: #253238;
-          font-size: 25px;
-          margin-bottom: 10px;
-        }
-        h3{
-          color: #b8b9b4;
-          font-size: 15px;
-          font-weight: normal;
+      .cards{
+        grid-column-start: span 2;
+        display: grid;
+        grid-template-columns: repeat(3,32%);
+        gap: 20px;
+
+        .Card{
+          justify-self: end;
         }
       }
-      .paging{
-        margin-left: auto;
-      }
-      .card{
-        width: 100%;
-        margin-top: 30px;
-        border: 2px solid #efefef;
-        border-radius: 5px;
-        
-        img{
-          width: 100%;
-        }
-        .product-info{
-          background-color: #efefef;
-          //padding-top: 15px;
-          //padding-bottom: 40px;
-          padding: 20px 15px 40px;
-          text-align: center;
-          
-          .product-name{
-            color: #a5a5a2;
-            margin-bottom: 10px;
-            font-size: 15px;
-            font-weight: normal;
-            text-transform: uppercase;
-          }
-          .product-description{
-            margin-bottom: 10px;
-            font-size: 19px;
-          }
-          .product-rate{
-            margin-bottom: 10px;
-          }
-          .product-price{
-            margin-bottom: 10px;
+    }
+  }
+}
+.meat-on-demand{
 
-            .old-price{
-              color: #a5a5a2;
-              font-size: 18px;
-              text-decoration: line-through;
-            }
-            .new-price{
-              color: #C21B35;
-              font-size: 18px;
-            }
-            .badge{
-              background-color: #C21B35;
-              color: #FFFFFF;
-              padding: 2px 4px;
-              font-size: 13px;
-              font-weight: bold;
-            }
-          }
-          .availability{
-            color: #a5a5a2;
-            margin-bottom: 10px;
+  .inner-meat-on-demand{
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: 90px auto;
+    gap: 30px;
 
-            .amount{
-              color: #C21B35;
-              font-weight: bold;
-            }
-          }
-          .Offers-ends-in{
-            display: flex;
-            width: 95%;
-            margin: auto;
-            p{
-              color: #a5a5a2;
-              width: 44%;
-            }
-            .down-timer{
-              h2,h3{
-                font-weight: normal;
-                span{
-                  display: inline-block;
-                  width: 46px;
-                }
-              }
-              h2{
-                font-size: 19px;
-                span{
-                  padding: 0 6px;
-                }
-              }
-              h3{
-                color: #a5a5a2;
-                font-size: 13px;
-                text-transform: uppercase;
-              }
-            }
-          }
-        }
-      }
+    .TitlesBox{
+      grid-column-start: span 2;
+    }
+  }
+}
+.last-day-sell{
+  background-color: #efefef;
+  .inner-last-day-sell{
+    margin-top: 65px;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 90px auto;
+    gap: 0px 33px;
+    .TitlesBox{
+      grid-column-start: span 4;
+    }
+  }
+}
+.latest-news{
+  .inner-latest-news{
+    margin-top: 40px;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 90px auto;
+    gap: 0px 43px;
+    .TitlesBox{
+      grid-column-start: span 3;
+    }
+  }
+}
+.Ads2{
+  .inner-Ads2{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 23.125% 23.125% 23.125% 23.125%;
+    grid-template-rows: 250px;
+    gap: 2.5%;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    img:nth-of-type(2){
+      grid-column-start: span 2;
+    }
+  }
+}
+.testimonials{
+  .inner-testimonials{
+    margin-top: 40px;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 90px auto;
+    gap: 0px 43px;
+    .TitlesBox{
+      grid-column-start: span 3;
     }
   }
 }

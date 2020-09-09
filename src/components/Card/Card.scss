@@ -1,0 +1,96 @@
+.Card{
+  width: 270px;
+  border: 1px solid #efefef;
+  border-radius: 5px;
+  
+  img{
+    display: block;
+    margin: auto;
+    width: 195px;
+    height: 195px;
+  }
+  .product-info{
+    padding: 0px 10px 10px;
+    
+    .product-name{
+      color: #a5a5a2;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+    .product-description{
+      width: 69%;
+      margin-bottom: 10px;
+      font-size: 15px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-transform: capitalize;
+    }
+    .product-rate{
+      margin-bottom: 10px;
+    }
+    .product-price{
+      margin-bottom: 10px;
+
+      .old-price{
+        color: #a5a5a2;
+        font-size: 16px;
+        text-decoration: line-through;
+      }
+      .new-price{
+        color: #C21B35;
+        font-size: 16px;
+      }
+      .badge{
+        background-color: #C21B35;
+        color: #FFFFFF;
+        padding: 2px 4px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    .availability{
+      color: #a5a5a2;
+      margin-bottom: 10px;
+      text-transform: capitalize;
+
+      .amount{
+        color: #C21B35;
+        font-weight: bold;
+      }
+    }
+    .Offers-ends-in{
+      display: flex;
+      width: 95%;
+      margin: auto;
+      p{
+        color: #a5a5a2;
+        width: 44%;
+      }
+      .down-timer{
+        h2,h3{
+          font-weight: normal;
+          span{
+            display: inline-block;
+            width: 45px;
+          }
+        }
+        h2{
+          font-size: 18px;
+          margin-bottom: 12px;
+          
+          span{
+            padding: 0 6px;
+          }
+        }
+        h3{
+          color: #a5a5a2;
+          font-size: 10px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

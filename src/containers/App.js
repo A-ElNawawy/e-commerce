@@ -1,20 +1,40 @@
 import React from 'react';
 import './App.scss';
-import Container from '../components/Container';
-import logo from './images/logo.jpg';
-import call from './images/call.png';
+import Container from '../components/Container/Container';
+import Card from './../components/Card/Card';
+import HotDealCard from './../components/HotDealCard/HotDealCard';
+import TitlesBox from '../components/TitlesBox/TitlesBox';
+import Paging from '../components/Paging/Paging';
+import TopCustomerCard from '../components/TopCustomerCard/TopCustomerCard';
+import SellCard from '../components/SellCard/SellCard';
+import NewsCard from '../components/NewsCard/NewsCard';
+import TestimonialsCard from '../components/TestimonialsCard/TestimonialsCard';
 //----------------------------
-import beef from './images/categories/beef.png';
-import mutton from './images/categories/mutton.png';
-import chicken from './images/categories/chicken.png';
-import duck from './images/categories/duck.png';
-import buffalo from './images/categories/buffalo.png';
-import turkey from './images/categories/turkey.png';
-import pigeon from './images/categories/pigeon.png';
-import quail from './images/categories/quail.png';
+import logo from './../Data/images/logo.jpg';
+import call from './../Data/images/call.png';
 //----------------------------
-import fourSlices from './images/products/fourSlices.png';
-
+import beef from './../Data/images/categories/beef.png';
+import mutton from './../Data/images/categories/mutton.png';
+import chicken from './../Data/images/categories/chicken.png';
+import duck from './../Data/images/categories/duck.png';
+import buffalo from './../Data/images/categories/buffalo.png';
+import turkey from './../Data/images/categories/turkey.png';
+import pigeon from './../Data/images/categories/pigeon.png';
+import quail from './../Data/images/categories/quail.png';
+//----------------------------
+import fourSlices from './../Data/images/products/fourSlices.png';
+//----------------------------
+import topCustomer from './../Data/images/customers/topCustomer.png';
+import cutsOfBeef from './../Data/images/cutsOfBeef.png';
+//----------------------------
+import video from './../Data/images/news/video.png';
+import ducks from './../Data/images/news/ducks.png';
+import freshFood from './../Data/images/Ads/freshFood.png'
+import roasted from './../Data/images/Ads/roasted.png'
+import TRSFoods from './../Data/images/Ads/TRSFoods.png'
+//----------------------------
+import customer1 from './../Data/images/customers/customer1.png';
+import customer2 from './../Data/images/customers/customer2.png';
 
 export default function App() {
   return (
@@ -116,42 +136,246 @@ export default function App() {
         <Container>
           <div className="inner-Ads">
             <div className="hot-deals">
-              <div className="titles-box">
-                <h2>Hot Deals</h2>
-                <h3>Add hot products to weekly line up</h3>
-              </div>
-              <div className="paging">
-                right left
-              </div>
-              <div className="card">
-                <img src={fourSlices} alt="product"></img>
-                <div className="product-info">
-                  <h3 className="product-name">studio design</h3>
-                  <h2 className="product-description">Originals Kaval Windbreaker Winter Jacket</h2>
-                  <div className="product-rate">stars</div>
-                  <div className="product-price">
-                    <span className="old-price">$18.90 </span>
-                    <span className="new-price">$34.21 </span>
-                    <span className="discount badge">-5%</span>
-                  </div>
-                  <p className="availability">Availability: <span className="amount">300 In Stock</span></p>
-                  <div className="Offers-ends-in">
-                    <p>Hurry Up! Offers ends in:</p>
-                    <div className="down-timer">
-                      <h2><span>176</span>:<span>13</span>:<span>24</span>:<span>52</span></h2>
-                      <h3><span>days</span> <span>hours</span> <span>mins</span> <span>sec</span></h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <TitlesBox
+                title='Hot Deals'
+                subTitle='Add hot products to weekly line up'
+              />
+              <Paging />
+              <HotDealCard
+                productImg={fourSlices}
+                productAlt={fourSlices}
+                productName='studio design'
+                productDescription='originals kaval windbreaker winter jacket'
+                productRate='stars'
+                oldPrice='$18.90'
+                newPrice='$34.21'
+                discount='-5%'
+                availability='300 in stock'
+                countDown={true}
+                days='176'
+                hours='13'
+                mins='24'
+                sec='52'
+              />
             </div>
-            <div className="new-arrival">
-              <h2>New Arrivals</h2>
-
+            <div className="new-arrivals">
+              <TitlesBox
+                title='New arrivals'
+                subTitle='Add hot products to weekly line up'
+              />
+              <Paging />
+              <div className="cards">
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+                <Card
+                  productImg={fourSlices}
+                  productAlt={fourSlices}
+                  productName='studio design'
+                  productDescription='originals kaval windbreaker winter jacket'
+                  productRate='stars'
+                  oldPrice='$18.90'
+                  newPrice='$34.21'
+                  discount='-5%'
+                />
+              </div>
             </div>
           </div>
         </Container>
       </div>
+      <div className="meat-on-demand">
+        <Container>
+          <div className="inner-meat-on-demand">
+            <TitlesBox
+              title='meat on demand'
+              subTitle='dolor sit amet, consectetur adipiscing elit.'
+            />
+            <TopCustomerCard
+              img={topCustomer}
+              alt='customer'
+              heSays='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium aliquam tincidunt. Cras fringilla augue lacus, non blandit erat vehicula sit amet.'
+              name='Alamin Shisir'
+              address='goran, dhaka.'
+            />
+            <img src={cutsOfBeef} alt="cuts of beef"></img>
+          </div>
+        </Container>
+      </div>
+      <div className="last-day-sell">
+        <Container>
+          <div className="inner-last-day-sell">
+            <TitlesBox
+              title='last day sell'
+              subTitle='dolor sit amet, consectetur adipiscing elit.'
+            />
+            <SellCard
+              img={beef}
+              alt="beef"
+              quantity="1250kg"
+              product="beef sold"
+            />
+            <SellCard
+              img={mutton}
+              alt="mutton"
+              quantity="550kg"
+              product="mutton sold"
+            />
+            <SellCard
+              img={chicken}
+              alt="chicken"
+              quantity="1850kg"
+              product="chicken sold"
+            />
+            <SellCard
+              img={beef}
+              alt="beef"
+              quantity="2050kg"
+              product="beef sold"
+            />
+          </div>
+        </Container>
+      </div>
+      <div className="latest-news">
+        <Container>
+          <div className="inner-latest-news">
+            <TitlesBox
+              title='latest news'
+              subTitle='dolor sit amet, consectetur adipiscing elit.'
+            />
+            <NewsCard
+              img={video}
+              alt='image'
+              newsTitle='Lorem ipsum dolor, consectetur adipiscing elit. Nulla pretium aliquam tincidunt.'
+              poster='admin'
+              date='24 april, 2020'
+            />
+            <NewsCard
+              img={ducks}
+              alt='image'
+              newsTitle='This is third post for xipBlog'
+              poster='admin'
+              date='24 april, 2020'
+            />
+            <NewsCard
+              img={ducks}
+              alt='image'
+              newsTitle='dolor sit amet, consectetur adipiscing elit. Nulla pretium aliquam tincidunt.'
+              poster='admin'
+              date='24 april, 2020'
+            />
+          </div>
+        </Container>
+      </div>
+      <div className="Ads2">
+        <Container>
+          <div className="inner-Ads2">
+            <img src={TRSFoods} alt=""></img>
+            <img src={freshFood} alt=""></img>
+            <img src={roasted} alt=""></img>
+          </div>
+        </Container>
+      </div>
+      <div className="testimonials">
+        <Container>
+          <div className="inner-testimonials">
+            <TitlesBox
+              title='client testimonials'
+              subTitle='what our happy customers say !'
+            />
+            <TestimonialsCard
+              img={customer1}
+              alt='customer'
+              name='san ratul'
+              address='elephant road, dhaka'
+              customerOpinion='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut sagittis nisl. Morbi ornare turpis eros, at dapibus augue suscipit tincidunt. In cursus nulla vel leo cursus feugiat.'
+            />
+            <TestimonialsCard
+              img={customer2}
+              alt='customer'
+              name='san ratul'
+              address='elephant road, dhaka'
+              customerOpinion='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut sagittis nisl. Morbi ornare turpis eros, at dapibus augue suscipit tincidunt. In cursus nulla vel leo cursus feugiat.'
+            />
+            <TestimonialsCard
+              img={customer1}
+              alt='customer'
+              name='san ratul'
+              address='elephant road, dhaka'
+              customerOpinion='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut sagittis nisl. Morbi ornare turpis eros, at dapibus augue suscipit tincidunt. In cursus nulla vel leo cursus feugiat.'
+            />
+          </div>
+        </Container>
+      </div>
+      <footer className="footer">
+        <Container>
+          <footer className="inner-footer">
+            <div className="contacts">
+              <img alt="logo"></img>
+              <p>we are a team of designers and developers that create high quality HTML template</p>
+              <div>
+                <img></img>
+                <h3>need help</h3>
+                <h2>(+880)1863404110</h2>
+                <h2>(+880)1863404110</h2>
+              </div>
+              <div className="social">
+              <i className="fa fa-facebook"></i>
+              <i className="fa fa-facebook"></i>
+              <i className="fa fa-facebook"></i>
+              <i className="fa fa-facebook"></i>
+              </div>
+              <p>copyright meatbazar ltd. All Rights Reserved</p>
+            </div>
+          </footer>
+        </Container>
+      </footer>
     </div>
   );
 };

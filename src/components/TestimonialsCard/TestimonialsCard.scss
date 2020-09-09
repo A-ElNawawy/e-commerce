@@ -1,0 +1,32 @@
+.TestimonialsCard{
+  color: #757575;
+  border: 1px solid #e0e1da;
+  border-radius: 5px;
+  width: 400px;
+  padding: 15px 15px;
+  display: grid;
+  grid-template-columns: 87px auto;
+  grid-template-rows: 90px 31px auto;
+
+  img{
+    width: 70px;
+    height: 70px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  h3{
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+  .rate{
+    grid-column-start: span 2;
+  }
+  .customer-opinion{
+    line-height: 1.6;
+    grid-column-start: span 2;
+  }
+}
