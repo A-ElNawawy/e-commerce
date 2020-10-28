@@ -9,6 +9,7 @@ import TopCustomerCard from '../components/TopCustomerCard/TopCustomerCard';
 import SellCard from '../components/SellCard/SellCard';
 import NewsCard from '../components/NewsCard/NewsCard';
 import TestimonialsCard from '../components/TestimonialsCard/TestimonialsCard';
+import NeedHelp from '../components/NeedHelp/NeedHelp';
 //----------------------------
 import logo from './../Data/images/logo.jpg';
 import call from './../Data/images/call.png';
@@ -35,6 +36,7 @@ import TRSFoods from './../Data/images/Ads/TRSFoods.png'
 //----------------------------
 import customer1 from './../Data/images/customers/customer1.png';
 import customer2 from './../Data/images/customers/customer2.png';
+import CallUs from '../components/CallUs/CallUs';
 
 export default function App() {
   return (
@@ -64,13 +66,13 @@ export default function App() {
               <li>Contact</li>
             </ul>
             <div className="search">Search entire Store here ...</div>
-            <div className="call-us">
-              <img src={call} alt="call us"></img>
-              <div>
-                <p>Call us:</p>
-                <h4>(+880)1863404110</h4>
-              </div>
-            </div>
+            <CallUs
+              img={call}
+              alt='call us'
+              title='call us:'
+            >
+              <h2 className="phone">(+880)1863404110</h2>
+            </CallUs>
           </div>
         </Container>
       </div>
@@ -357,21 +359,54 @@ export default function App() {
         <Container>
           <footer className="inner-footer">
             <div className="contacts">
-              <img alt="logo"></img>
+              <img src={logo} alt="logo"></img>
               <p>we are a team of designers and developers that create high quality HTML template</p>
-              <div>
-                <img></img>
-                <h3>need help</h3>
-                <h2>(+880)1863404110</h2>
-                <h2>(+880)1863404110</h2>
-              </div>
+              <NeedHelp
+                icon='fas fa-phone-volume'
+                title='need help?'
+              >
+                <h2 className="phone">(+880) 1863 404 110</h2>
+                <h2 className="phone">(+880) 1863 404 110</h2>
+              </NeedHelp>
               <div className="social">
-              <i className="fa fa-facebook"></i>
-              <i className="fa fa-facebook"></i>
-              <i className="fa fa-facebook"></i>
-              <i className="fa fa-facebook"></i>
+                <i className="fa fa-facebook"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-youtube"></i>
+                <i className="fab fa-google"></i>
+                <i class="fab fa-instagram"></i>
               </div>
-              <p>copyright meatbazar ltd. All Rights Reserved</p>
+              <p>copyright &copy; meatbazar ltd. All Rights Reserved</p>
+            </div>
+            <div className="links">
+              <div className="links-column">
+                <h2 className="title">information <hr></hr></h2>
+                <ul>
+                  <li>delivery</li>
+                  <li>about us</li>
+                  <li>secure payment</li>
+                  <li>contact us</li>
+                  <li>sitemap</li>
+                  <li>stores</li>
+                </ul>
+              </div>
+              <div className="links-column">
+                <h2 className="title">custom links</h2>
+                <ul>
+                  <li>legal notice</li>
+                  <li>prices drop</li>
+                  <li>new products</li>
+                  <li>best sales</li>
+                  <li>login</li>
+                  <li>my account</li>
+                </ul>
+              </div>
+              <div className="newsletter">
+                <h2>newsletter</h2>
+                <p>you may unsubscribe at any time. for that purpose, please find our contact info in legal notice</p>
+                <div>enter your email here</div>
+                <i class="fab fa-app-store"></i>
+                <i class="fab fa-google-play"></i>
+              </div>
             </div>
           </footer>
         </Container>

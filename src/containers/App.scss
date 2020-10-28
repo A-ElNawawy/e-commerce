@@ -1,5 +1,4 @@
 .App{
-  
   color: #253238;
 }
 .languageBar{
@@ -72,15 +71,10 @@
     .search{
       width: 30%;
     }
-    .call-us{
-      display: flex;
-      
-      img{
-        width: 43px;
-        height: 43px;
-        margin-right: 10px;
+    .CallUs{
+      .phone{
+        font-size: 16px;
       }
-
     }
   }
 }
@@ -242,6 +236,70 @@
     gap: 0px 43px;
     .TitlesBox{
       grid-column-start: span 3;
+    }
+  }
+}
+.footer{
+  .inner-footer{
+    display: grid;
+    grid-template-columns: 33.33% 66.66%;
+    grid-template-rows: auto;
+
+    .contacts{
+      margin-left: -500px;
+      padding: 60px 15px 90px 500px;
+      background-color: #f4f4f4;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100px 75px 130px 91px 10px;
+      
+      p{
+        color: #6a6a6a;
+        font-size: 15px;
+      }
+      .NeedHelp{
+        .phone{
+          font-size: 23px;
+          font-weight: normal;
+          line-height: 1.3;
+        }
+      }
+      .social{
+        color: #6a6a6a;
+        display: grid;
+        grid-template-columns: 45px 45px 45px 45px 45px;
+        font-size: 22px;
+      }
+    }
+    .links{
+      margin-right: -500px;
+      padding: 60px 500px 90px 15px;
+      background-color: #efefef;
+      display: grid;
+      grid-template-columns: repeat(4,24%);
+      grid-template-rows: auto auto;
+      gap: 1.3333%;
+
+      .links-column{
+        .title{
+          padding-bottom: 15px;
+          border-bottom: 1px solid ;//#d5d5d5
+          text-transform: capitalize;
+          font-size: 18px;
+
+          hr{
+            width: 63px;
+            border: 1px solid;
+          }
+        }
+        ul{
+          list-style: none;
+        }
+      }
+      .newsletter{
+        background-color: #fff;
+        grid-column-start: span 2;
+      }
     }
   }
 }

@@ -1,0 +1,14 @@
+.CallUs{
+  display: flex;
+  
+  img{
+    width: 43px;
+    height: 43px;
+    margin-right: 10px;
+  }
+  .title{
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: normal;
+  }
+}

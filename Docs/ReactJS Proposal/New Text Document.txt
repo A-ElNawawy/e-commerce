@@ -1,0 +1,85 @@
+React Ecommerce Web App
+Overview:
+This is a proposal to build an ecommerce web app using react JS.
+Goals:
+Design and structure follow to HTML Template and Attached File with have some pages customizing now.
+
+Specifications
+
+• Common Modules
+• Header
+• Brand Logo
+• Cart
+• Language Change
+• Compare
+• Wish List
+• Settings
+• NavBar
+• Category Mega
+• Search Bar (Auto Complete)
+• Footer
+
+• Home Page
+• Slider 1 (Banner )
+• Slider 2 (Best Seller)
+• Popular Categories
+• Hot Deals
+• More
+• Dynamic Configuration Based Loading
+
+• Shop List Page
+• Regular List
+• Pagination
+• Filters
+• Grid Resize
+• Switch List View/Thumb View
+
+• Product Details Page
+• Image Zoomer
+• Image Slider
+• Product Features & Pricing
+• Quantity
+• Add to Cart, wishlist, compare
+• Product Details Tabs
+• Details
+• Description
+• Review
+• Related Products
+• Other Categories
+
+• Cart Page
+• Item List
+• Cart Details
+• Coupons
+
+• Checkout Page
+• Billing Details
+• Order Details
+• Payment
+• Payment Clients
+• Order Success/Fail Page
+
+• Auth
+• Sign up
+• Social Sign up
+• Login
+• Social Login
+
+• Wishlist
+• Items in the wishlist
+
+• Compare Page
+• 2 Products
+• 3 Products
+
+• Blog
+• List of Articles (Grid/ListView) with pagination
+• Category Filter
+• Tag Filter
+
+• Contact Us/About Page
+• Company Information
+• Contacts
+• Maps
+• Visions
+• Missions etc.
